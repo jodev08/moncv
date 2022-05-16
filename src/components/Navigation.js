@@ -11,22 +11,56 @@ const Navigation = () => {
 
       <div className="navigation">
         <ul>
-          <NavLink exact to="/" activeClassName="navActive">
-            <span>Accueil</span>
-          </NavLink>
+          <li>
+            <NavLink exact to="/" activeClassName="navActive">
+              <span>Accueil</span>
+            </NavLink>
+          </li>
 
-          <NavLink exact to="/competences" activeClassName="navActive">
-            <span>Compétences</span>
-          </NavLink>
+          <li>
+            <NavLink exact to="/competences" activeClassName="navActive">
+              <span>Compétences</span>
+            </NavLink>
+          </li>
 
-          <NavLink exact to="/experiences" activeClassName="navActive">
-            <span>Expériences</span>
-          </NavLink>
-
-          <NavLink exact to="/contact" activeClassName="navActive">
-            <span>Contact</span>
-          </NavLink>
+          <li>
+            <NavLink exact to="/experiences" activeClassName="navActive">
+              <span>Expériences</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/contact" activeClassName="navActive">
+              <span>Contact</span>
+            </NavLink>
+          </li>
         </ul>
+
+        <div className="social">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/jodev08"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li className="fab fa-github"></li>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="signature">
+          <p>Stonska Jordan - 2022</p>
+        </div>
       </div>
     </div>
   );
