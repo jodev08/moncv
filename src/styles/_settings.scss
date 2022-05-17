@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap');
+
+$font-1 : 'overpass',cursive;
+
+$color-1 : #CF751B;
+$color-2 : #E6E21E;
+$color-3 : #242422;
+$color-4 : #FAFAF2;
+
+$borderRadius : 25px;
+$shadow : 0 1px 3px #333;
+$minHeight : 95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1 ;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+
+}
+
+li{
+    list-style-type:none ;
+}
+a{
+    text-decoration: none;
+    color: $color-3;
+    cursor: pointer;
+}
+a:visited{
+    color: $color-3 ;
+}
+
+.accueil, .competences, .contact,.experiences{
+    display: flex;
+
+    @media screen and (max-width: 850px){
+        display: block !important;
+    }
+   
+}
+
+.accueilContent, .competencesContent, .contactContent,.experiencesContent{
+    margin-left: 4rem;
+
+    @media screen and (max-width:850px){
+        margin-left: 0 !important;
+    }
+}

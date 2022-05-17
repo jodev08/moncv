@@ -5,4 +5,9 @@ compétences
 expérience
 contact
 
-Problème avec les routes
+---
+
+style->
+
+style global : style.scss
+reglage global : \_settings.scss
