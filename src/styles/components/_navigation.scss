@@ -28,57 +28,69 @@
 
            
         }
-        
-    img{
-            border-radius: 50%;
-            box-shadow: 0 0 0 2px $color-3;
-            /*taille photo*/
-            width: 150px;
-            
+    }
+}
+
+
+/*----------bon au dessus--------*/
+
+img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px $color-3;
+    /*taille photo*/
+    width: 150px;
+    
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 1.5rem;
     }
 
-    h3 {
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        margin-top: 1.5rem;
-    }
-    }
-    .navigation {
+.navigation {
         grid-area: 2;
         padding: 2rem 1rem;
+        
+        }
 
-    }
-
-    ul{
-        height: 100%;
-        display: grid;
+        ul{
+            height: 100%;
+            display: grid;
+        }
 
         li{
-            padding: 1rem 0 1rem .4rem;
+           
             font-size: 1.3rem;
             position: relative;
+        }
 
-            
-
-           
-
-            a{
-                color: $color-3;
-            }
-            .navActive {
-                color: aqua;
-            }
-
-            
+        a{
+            color: $color-3;
+        }
+        span{
+            margin-left: 2.7rem;
+        }
+        span:hover{
+            color: #FAFAF2;
+        }
     
+      
+            
+        .social{
+            
+            
+            
+            text-align: right;
+            text-decoration: none;
+            padding-right: 15px;
+            
+            
+
             
         }
-        
-        
 
-       
-    }
-    
-
+.signature{
+    text-align: center;
 }
