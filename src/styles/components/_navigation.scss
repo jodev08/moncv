@@ -3,7 +3,7 @@
     font-family: $font-1;
     height: 100%;
     min-height: $minHeight;
-    min-width: 264px;
+    width: 264px;
     border-radius: $borderRadius;
     position: relative;
     display: grid;
@@ -31,8 +31,6 @@
     }
 }
 
-
-/*----------bon au dessus--------*/
 
 img{
     border-radius: 50%;
@@ -92,5 +90,40 @@ h3 {
         }
 
 .signature{
+    margin-top: 2rem;
     text-align: center;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    
+}
+
+@media  screen and(max-width: 850px) {
+    .sidebar{
+        display: flex;
+        min-height: 50px;
+        
+        width: 100%;
+
+        .id, .social {
+            display: none;
+        }
+        .navigation {
+            width: 100%;
+            padding: .1rem 1rem;
+            transform: translateY(30%);
+            
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                margin-left: 1.5rem !important;
+                
+                
+            }
+        }
+
+    }
+    
 }
