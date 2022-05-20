@@ -49,6 +49,7 @@ a:visited{
 
 .accueil, .competences, .contact,.experiences{
     display: flex;
+   
 
     @media screen and (max-width: 850px){
         display: block !important;
