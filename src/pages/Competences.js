@@ -3,14 +3,18 @@ import Navigation from "../components/Navigation";
 import Language from "../components/competences/Language";
 import Autre from "../components/competences/Autre";
 import Skills from "../components/competences/Skills";
+import Framework from "../components/competences/Framework";
 
 const Competences = () => {
   return (
-    <div>
+    <div className="competences">
       <Navigation></Navigation>
-      <Language></Language>
-      <Skills></Skills>
-      <Autre></Autre>
+      <div className="competencesContent">
+        <Language></Language>
+        <Framework></Framework>
+        <Autre></Autre>
+        <Skills></Skills>
+      </div>
     </div>
   );
 };
