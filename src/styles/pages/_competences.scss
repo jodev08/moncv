@@ -6,24 +6,32 @@
     display: grid;
     grid-template-columns:  1fr 1fr 1fr;
     grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "l f a "
+    "s s c";
+   
+    
    
 
 
 }
 
-.language, .autre, .skills, .framework {
+.language, .autre, .skills, .framework , .interet{
     background-color: $color-1;
     border-radius: $borderRadius;
     padding: .8rem;
+    margin: 3px;
 
     
 }
-h3{
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    font-family: $font-1;
-    text-transform: uppercase;
 
+.skills{
+    grid-area: s;
 }
+
+
+
+
+
 
 

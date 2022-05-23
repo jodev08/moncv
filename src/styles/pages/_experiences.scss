@@ -1,0 +1,15 @@
+.experiencesContent{
+    min-height: $minHeight;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns:  1fr 1fr
+}
+
+.experienceprofessionnel, .formation{
+    background-color: $color-1;
+    border-radius: $borderRadius;
+    padding: .8rem;
+    margin: 3px;
+}

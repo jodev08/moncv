@@ -1,11 +1,16 @@
 import React from "react";
+import ExperienceProfessionnel from "../components/experiences/ExperienceProfessionnel";
+import Formation from "../components/experiences/Formation";
 import Navigation from "../components/Navigation";
 
 const Experiences = () => {
   return (
-    <div>
+    <div className="experiences">
       <Navigation></Navigation>
-      <h1>experiences</h1>
+      <div className="experiencesContent">
+        <ExperienceProfessionnel></ExperienceProfessionnel>
+        <Formation></Formation>
+      </div>
     </div>
   );
 };
